@@ -1,0 +1,9 @@
+-delegation
+-reflexivity
+-higher-order functions
+-tailcalls
+-generators
+-micro threads
+-exception handling
+-ref counting
+-optional GC

@@ -1,0 +1,107 @@
+***BUGS******************************************************
+-[FIXED]check that the "break" statement is inside a for foreach or while
+-[FIXED]the delete operator does not work properly when used as function arg "print(delete a.b)"
+-[FIXED]the MAX_LITERALS is set to 0xFFFF while arg1 is a short insted of an unsigned short
+
+***TODO******************************************************
+
+<TODO>
+-[DONE][parser/compiler]more reliable deref system & delete op (recursion safe){I would use a stack of ints}
+-[DONE]fix the AND operator
+-[DONE]final api + error handling
+-[DONE]final reflexivity
+-[DONE]finalize lexer
+-[DONE]debug infos(store the line info as OP_LINE instruction)
+-[DONE]cycle detector & GC
+-[DONE]tail calls
+-[DONE]clean up function calls
+-[DONE]meaningful run time errors
+-[DONE]line info without(OP_LINE)
+-[DONE]standard library
+-[DONE]debug hook on calls
+-test suite
+-[DONE]raw manual
+-[DONE]test sq_next()
+-random refactoring
+-[DONE]test programs
+-embedding samples
+-[DONE]manual
+-[DEPRECATED]finalize stash lib and document it + tutorial on simple + ENV variable
+-clean up sq.c
+-[DONE]test sq_dump
+
+-[DONE]IO lib
+-[DONE]math lib
+-[DONE]system lib
+-[DONE]string lib
+-[DONE]add registry table
+
+-[DONE]sq_deleteslot() delete keys from tables
+-[DONE]_delslot metamethod
+-[DONE]coroutine lib(decide if will be part of the standard libs)
+-[DONE]update manual with the multiline string issue
+-[DONE]test usedata and _call together
+
+-C api for gather function params etc..
+
+<TODO LATER>
+-compiler & vm optimization
+-C++ bindings(_bobject_ptr etc...)
+
+
+
+***DESIGN ISSUES*********************************************
+
+<SYNTAX & FEATURES>
+-[DONE]continue statement
+-[DONE]do-while statement
+-[DEPRECATED]new operator(maybe I'll remove it)
+-[DEPRECATED]"global" statement (aka "varname <- value" become "global varname=value")
+-[DONE]exception handling
+-[DONE]generators
+-[DONE]inc & dec operators(++,--)
+-[DONE]composite operators(+= etc...)
+
+<API>
+-[DONE]decide how to keep references from C
+-[DONE]debug interface
+-[DONE]decide how to throw errors from C
+
+<REFLEXIVITY>
+
+table
+	[DONE]_set
+	[DONE]_get
+	[DONE]_add
+	[DONE]_sub
+	[DONE]_mul
+	[DONE]_div
+	[DONE]_unm
+	[DONE]_cmp
+	[DONE]_typeof
+	[DONE]_call
+
+userdata only
+	[DONE]_nexti
+	
+<<LATER MAYBE>>
+	_tostring
+	
+	
+about classes
+-think about _cloned && _newslot
+-instanceof
+	
+1.1 PLAN
+-free variables will not be passed in the stack(new OP and new API call)
+-weak assignment
+-get rid of C++ exception handling
+-proper bit based SQRESULT s
+-recursive meta methods(using throw null)
+-variable number of arguments
+-shift operators metamethods
+
+2.0 PLAN
+-classes + inheritance
+	
+	

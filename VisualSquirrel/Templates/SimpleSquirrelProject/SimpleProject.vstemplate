@@ -1,0 +1,21 @@
+﻿<VSTemplate Version="3.0.0" Type="Project"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Basic Squirrel Project</Name>
+    <Description>
+      A project for creating a Squirrel Project.
+    </Description>
+    <Icon>SimpleProject.ico</Icon>
+    <ProjectType>SQSimpleProject</ProjectType>
+    <CreateNewFolder>false</CreateNewFolder>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <DefaultName>SquirrelProject</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="SimpleProject.sqproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true" SubType="Code">
+        main.nut
+      </ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

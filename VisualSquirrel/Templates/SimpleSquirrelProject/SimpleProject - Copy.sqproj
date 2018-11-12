@@ -1,0 +1,45 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="Build" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Client</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>$guid1$</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Client' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <AutorunInterpreter>True</AutorunInterpreter>
+    <CommandLineOptions>
+    </CommandLineOptions>
+    <Interpreter>
+    </Interpreter>
+    <Localhost>True</Localhost>
+    <Port>1234</Port>
+    <SuspendOnStartup>False</SuspendOnStartup>
+    <TargetAddress>127.0.0.1</TargetAddress>
+    <WorkingDirectory>
+    </WorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Server' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <AutorunInterpreter>True</AutorunInterpreter>
+    <CommandLineOptions>
+    </CommandLineOptions>
+    <Interpreter>
+    </Interpreter>
+    <Localhost>True</Localhost>
+    <Port>1234</Port>
+    <SuspendOnStartup>False</SuspendOnStartup>
+    <TargetAddress>127.0.0.1</TargetAddress>
+    <WorkingDirectory>
+    </WorkingDirectory>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="main.nut">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+</Project>

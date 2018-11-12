@@ -1,0 +1,12 @@
+﻿<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Empty File (.nut)</Name>
+    <Description>A Squirrel code file.</Description>
+    <Icon>nut.ico</Icon>
+    <ProjectType>SQSimpleProject</ProjectType>
+    <DefaultName>NutFile.nut</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$.nut" SubType="Code">NutFile.nut</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

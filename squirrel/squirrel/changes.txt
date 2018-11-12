@@ -1,0 +1,6 @@
+*added classes
+*sq_newclass()
+*sq_setinstanceup() sq_getinstanceup()
+*free variables are no longer in the stack
+*modified sq_settypetag
+*added vargc & vargv + the ...
